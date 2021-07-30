@@ -4,10 +4,9 @@ import { CgMouse } from "react-icons/cg";
 import Fade from "react-reveal/Fade";
 import makeCarousel from "react-reveal/makeCarousel";
 import { render } from "@testing-library/react";
-import styled, { css } from "styled-components";
 import { Link } from "react-scroll";
 import Jump from "react-reveal/Jump";
-import { faLessThanEqual } from "@fortawesome/free-solid-svg-icons";
+import styled, { css } from "styled-components";
 
 function Home() {
   const Container = styled.div`
