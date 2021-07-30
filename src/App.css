@@ -154,21 +154,21 @@ header {
   padding: 16px;
   width: 100vw;
   display: flex;
-  position: fixed;
+  position: relative;
   top: 0;
   left: 0;
   z-index: 999999;
   transition: 0.4s linear;
+  /* transform: translate3d(0, -100%, 0); */
 }
 
-header.Nav.false {
-  position: relative;
+header.top-header {
+  position: fixed;
 }
 
-header.Nav.scroll {
-  /* translate: (0, -100px); */
-  transform: translate3d(0, -100%, 0);
+header.header-scrolled {
   background: rgb(56, 56, 56);
+  position: fixed;
 }
 
 .links {

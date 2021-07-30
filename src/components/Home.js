@@ -50,7 +50,7 @@ function Home() {
       </nav>
       <span className="mouse">
         <i style={{ fontSize: "40px" }}>
-          <Link to="about" spy={true} smooth={true}>
+          <Link to="about" spy={true} smooth={true} offset={-80}>
             <CgMouse fontSize="60px" color="grey" />
           </Link>
         </i>
