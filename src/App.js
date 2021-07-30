@@ -20,6 +20,9 @@ import server from "./images/server.jpg";
 import Fade from "react-reveal/Fade";
 
 function App() {
+  window.onbeforeunload = function () {
+    window.scrollTo(0, 0);
+  };
   return (
     <div>
       <Navbar />

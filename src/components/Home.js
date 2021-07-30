@@ -6,6 +6,8 @@ import makeCarousel from "react-reveal/makeCarousel";
 import { render } from "@testing-library/react";
 import styled, { css } from "styled-components";
 import { Link } from "react-scroll";
+import Jump from "react-reveal/Jump";
+import { faLessThanEqual } from "@fortawesome/free-solid-svg-icons";
 
 function Home() {
   const Container = styled.div`
@@ -49,9 +51,11 @@ function Home() {
         </section>
       </nav>
       <span className="mouse">
-        <i style={{ fontSize: "40px" }}>
+        <i>
           <Link to="about" spy={true} smooth={true} offset={-80}>
-            <CgMouse fontSize="60px" color="grey" />
+            <Jump forever={0} count={3} delay={2000}>
+              <CgMouse className="mouse" fontSize="60px" color="grey" />
+            </Jump>
           </Link>
         </i>
       </span>

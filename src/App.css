@@ -264,6 +264,10 @@ li > a:hover:after {
   cursor: pointer;
 }
 
+/* .carousel-mouse {
+  position: none;
+} */
+
 @media screen and (max-width: 700px) {
   h1 {
     font-size: 35px;
@@ -281,10 +285,6 @@ li > a:hover:after {
 
   .grid-icons {
     margin: 0;
-  }
-
-  .mouse {
-    /* display: none; */
   }
 }
 
@@ -330,6 +330,7 @@ li > a:hover:after {
 
   .title {
     width: 100%;
+    margin: 0 1rem 0 1rem;
   }
 
   h3 {
