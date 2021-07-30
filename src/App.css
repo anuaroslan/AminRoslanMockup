@@ -154,24 +154,21 @@ header {
   padding: 16px;
   width: 100vw;
   display: flex;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   z-index: 999999;
-  transition: 0.2s linear;
+  transition: 0.4s linear;
 }
 
-.scroll-down header {
+header.Nav.false {
+  position: relative;
+}
+
+header.Nav.scroll {
+  /* translate: (0, -100px); */
   transform: translate3d(0, -100%, 0);
-  background: white;
-  display: fixed;
-}
-
-.nav,
-.scroll-up header {
   background: rgb(56, 56, 56);
-  translate: (0, -100px);
-  display: fixed;
 }
 
 .links {
@@ -381,11 +378,14 @@ li > a:hover:after {
   width: 100%;
   height: 200px;
   background: white;
-  box-shadow: 0 6px 6px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+  cursor: default;
+  transition: 0.2s ease;
 }
 
 .grid-item:hover {
-  margin-top: ;
+  transform: translateY(-10px);
+  box-shadow: 1px 10px 12px 1px rgba(41, 41, 41, 0.2);
 }
 
 .grid-content {
@@ -456,7 +456,7 @@ li > a:hover:after {
   margin: 0;
   padding: 0;
   background: rgb(87, 87, 87);
-  width: 40%;
+  min-width: 43%;
   height: 35px;
   position: absolute;
   right: 0%;
