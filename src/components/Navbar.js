@@ -9,39 +9,37 @@ const Navbar = () => {
   const [scroll, setScroll] = useState(false);
   useEffect(() => {
     window.addEventListener("scroll", () => {
-      setScroll(window.scrollY > 400);
+      setScroll(window.scrollY > 700);
     });
   }, []);
   return (
-    <Fade top>
-      <HideOnScroll>
-        <header className={scroll ? "header-scrolled" : "top-header"}>
-          <div className="nav-header">
-            <Link activeClass="active" to="home" spy={true} smooth={true}>
-              <img className="ar-logo" src={logo} alt=""></img>
+    <HideOnScroll>
+      <header className={scroll ? "header-scrolled" : "top-header"}>
+        <div className="nav-header">
+          <Link activeClass="active" to="home" spy={true} smooth={true}>
+            <img className="ar-logo" src={logo} alt=""></img>
+          </Link>
+          <button className="nav-toggle"></button>
+        </div>
+        <ul className="links">
+          <li>
+            <Link to="about" spy={true} smooth={true} offset={-80}>
+              <a href="">About</a>
             </Link>
-            <button className="nav-toggle"></button>
-          </div>
-          <ul className="links">
-            <li>
-              <Link to="about" spy={true} smooth={true} offset={-80}>
-                <a href="#">About</a>
-              </Link>
-            </li>
-            <li>
-              <Link to="projects" spy={true} smooth={true} offset={-200}>
-                <a href="#">Projects</a>
-              </Link>
-            </li>
-            <li>
-              <Link to="speaking" spy={true} smooth={true} offset={-300}>
-                <a href="#">Speaking</a>
-              </Link>
-            </li>
-          </ul>
-        </header>
-      </HideOnScroll>
-    </Fade>
+          </li>
+          <li>
+            <Link to="projects" spy={true} smooth={true} offset={-200}>
+              <a href="">Projects</a>
+            </Link>
+          </li>
+          <li>
+            <Link to="speaking" spy={true} smooth={true} offset={-300}>
+              <a href="">Speaking</a>
+            </Link>
+          </li>
+        </ul>
+      </header>
+    </HideOnScroll>
   );
 };
 
