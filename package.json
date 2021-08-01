@@ -2,7 +2,7 @@
   "name": "aminreact",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://anuaroslan.github.io/AminRoslanMockup/",
+  "homepage": "https://aminroslanbyanuaroslan.netlify.app/",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.35",
     "@fortawesome/free-solid-svg-icons": "^5.15.3",
