@@ -3,7 +3,7 @@ import ".././App.css";
 import logo from "../images/ARlogo.png";
 import { Link } from "react-scroll";
 import HideOnScroll from "./HideOnScroll";
-import Fade from "react-reveal/Fade";
+// import Fade from "react-reveal/Fade";
 
 const Navbar = () => {
   const [scroll, setScroll] = useState(false);
