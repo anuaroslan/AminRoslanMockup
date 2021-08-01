@@ -179,7 +179,8 @@ header.header-scrolled {
   margin-right: 65px;
 }
 
-a {
+button {
+  border: none;
   position: relative;
   margin-left: 1rem;
   font-size: 20px;
@@ -194,7 +195,7 @@ a {
   background: none;
 }
 
-li > a::after {
+button::after {
   content: "";
   position: absolute;
   background-color: rgb(110, 198, 255);
@@ -205,7 +206,7 @@ li > a::after {
   transition: 0.3s;
 }
 
-li > a:hover:after {
+button:hover:after {
   width: 100%;
 }
 
@@ -216,16 +217,13 @@ li > a:hover:after {
     margin-right: 1rem;
   }
 
-  li a {
+  li button {
     font-size: 20px;
     letter-spacing: 0px;
   }
 }
 
 /* Home */
-
-.home {
-}
 
 .home-container {
   display: flex;

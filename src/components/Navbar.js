@@ -24,17 +24,17 @@ const Navbar = () => {
         <ul className="links">
           <li>
             <Link to="about" spy={true} smooth={true} offset={-80}>
-              <a href="#">About</a>
+              <button>About</button>
             </Link>
           </li>
           <li>
             <Link to="projects" spy={true} smooth={true} offset={-200}>
-              <a href="#">Projects</a>
+              <button>Projects</button>
             </Link>
           </li>
           <li>
             <Link to="speaking" spy={true} smooth={true} offset={-300}>
-              <a href="#">Speaking</a>
+              <button>Speaking</button>
             </Link>
           </li>
         </ul>
